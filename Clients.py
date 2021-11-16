@@ -19,7 +19,7 @@ class Chat():
 
         self.name = simpledialog.askstring('Nome', 'Digite seu nome:', parent=login)
         self.sala = simpledialog.askstring('Sala', 'Digite o nome da sala que deseja entrar:', parent=login)
-        thread = threading.Thread(target=self.connect())
+        thread = threading.Thread(target=self.connect)
         thread.start()
         self.window()
 
