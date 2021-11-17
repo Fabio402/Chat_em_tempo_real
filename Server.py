@@ -41,5 +41,5 @@ while True:
     delivery(chats[sala], f'{nome} entrou no grupo!\n')
 #    Recurso de execução paralela para que o servidor possa atender a mais de um usuário por vez,
 #    ouvindo a todos os usuários conectados
-    thread = threading.Thread(target=listener, args=(sala, nome, client))
+    thread = threading.Thread(target=listener, args=(chats[sala], nome, client))
     thread.start()

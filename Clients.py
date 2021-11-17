@@ -30,7 +30,7 @@ class Chat():
     def sendMessage(self):
         message = self.txtSend.get()
         self.client.send(message.encode())
-        self.txtSend.delete("1.0", 'end')
+        #self.txtSend.delete("1.0", 'end')
 
     def connect(self):
         while True:
